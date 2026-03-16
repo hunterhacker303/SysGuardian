@@ -1,7 +1,7 @@
 import time
 import psutil
 import os
-
+from process_analyzer import process_analyzer as ps
 def display_usage(cpu_usage, mem_usage,disk_usage, bars=50):
     cpu_percent = (cpu_usage / 100.0)
     cpu_bar = '#' * int(cpu_percent * bars) + '-' * (bars - int(cpu_percent * bars))
